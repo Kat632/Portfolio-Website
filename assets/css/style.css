@@ -1,16 +1,7 @@
 body {
-    overflow: hidden;
-    background: url(/assets/images/IMG_2120_EDITED.jpg);
     margin: 0 auto;
-    position: relative;
     font-family: 'Lato', sans-serif;
     display: block;
-    /* Create parallax scrolling effect */
-    /* Parallax scrolling code from W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 body, html {
@@ -50,6 +41,18 @@ body, html {
     position: relative;
 }
 
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/images/IMG_2120_EDITED.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
 #hero .container {
     padding-top: 72px;
     position: relative;
@@ -76,4 +79,84 @@ body, html {
 
 .hero-right {
     display: flex;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #151a21;
+}
+
+.section-title h3:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #8C6D6A;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.about .content {
+    font-size: 15px;
+    color: #151a21;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    padding-left: 28px;
+    position: relative;
+}
+
+.about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #8C6D6A;
+    line-height: 1;
+}
+
+.about .content .btn-work-history {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #8C6D6A;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #8C6D6A
+}
+
+.about .content .btn-work-history:hover {
+    background: #8C6D6A;
+    color: white;
+    text-decoration: none;
 }
