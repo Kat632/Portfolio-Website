@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,70 @@
 
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
-    
+    <header id="header">
+        <nav id="navbar">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link scrollto active" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollto active" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollto active" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollto active" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2">
+                <p>Hi, my name is</p>
+                <h1>Katherine Biggs.</h1>
+            </div>
+        </div>
+        <div class="row hero-right justify-content-end">
+            <div class="col-xl-3">
+                <h2>I build websites.</h2>
+                <p>I'm a graduate software developer.  I specialise in building and designing beautiful digital experiences.
+                    I am passionate about creating accessible, human-centred websites.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<main id="main">
+    <section id="about" class="about"></section>
+    <section id="portfolio" class="portfolio"></section>
+    <section id="contact" class="contact"></section>
+</main>
+
+
 </body>
+
 </html>

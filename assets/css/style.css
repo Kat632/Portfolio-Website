@@ -1,0 +1,79 @@
+body {
+    overflow: hidden;
+    background: url(/assets/images/IMG_2120_EDITED.jpg);
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    /* Create parallax scrolling effect */
+    /* Parallax scrolling code from W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: right;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar > ul > li {
+    position: relative;
+    white-space: nowrap;
+    margin: 0 12px;
+}
+
+#navbar a {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 3px;
+    font-size: 16px;
+    color: #8C6D6A;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+#hero .container {
+    padding-top: 72px;
+    position: relative;
+    text-align: left;
+}
+
+#hero p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #696969;
+}
+
+#hero h1 {
+    color: #151a21;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#hero h2 {
+    color: #151a21;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-right {
+    display: flex;
+}
