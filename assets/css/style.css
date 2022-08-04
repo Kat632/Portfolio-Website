@@ -83,7 +83,7 @@ html {
 }
 
 section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .section-title {
@@ -114,6 +114,7 @@ section {
     margin-bottom: 0;
     color: #777777;
     font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about .content {
@@ -163,7 +164,55 @@ section {
     text-decoration: none;
 }
 
+/* -- Skills Modal -- */
+
+button .btn-settings {
+    margin: 25px;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    background-color: #8C6D6A;
+    color: #151a21;
+  }
+
+  button .btn-settings:active {
+    color: #8C6D6A;
+    background-color: #151a21;
+  }
+  .modal {
+      overflow: hidden;
+  }
+  .modal-dialog {
+      margin-right: 0;
+      margin-left: 0;
+  }
+  .modal-header {
+    height:30px;
+    padding: 20px;
+    background-color:#18456b;
+    color:white;
+  }
+  .modal-title {
+    margin-top:-10px;
+    font-size:16px;
+  }
+  .modal-header .close {
+    margin-top:-10px;
+    color:#fff;
+  }
+  .modal-body {
+    color:#888;
+    padding: 5px 35px 20px;
+  }
+  .modal-body h3 {
+    text-align: center;
+  }
+  .modal-body p {
+    padding-top:10px;
+    font-size: 1.1em;
+  }
+
 /* -- Masonry grid -- */
+
 *,
 *:before,
 *:after {
@@ -286,6 +335,7 @@ section {
 }
 
 .contact button[type="submit"] {
+    font-family: 'Roboto Mono', monospace;
     background: #151a21;
     color: #fff;
     border: 0;
@@ -295,7 +345,62 @@ section {
 }
 
 .contact button[type="submit"]:hover {
+    font-family: 'Roboto Mono', monospace;
     background: #fff;
     color: #151a21;
     text-decoration: none;
+}
+
+/* -- Footer -- */
+
+#footer {
+    background: #151a21;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#footer p {
+    font-style: italic;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0; 
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #DDC399;
+    color: #151a21;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background: #8C6D6A;
+}
+
+#footer .copyright {
+    margin: 0 0 5x 0;
+    font-family: 'Roboto Mono', monospace;
 }

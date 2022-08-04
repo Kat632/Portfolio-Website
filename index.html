@@ -100,7 +100,29 @@
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>I used to work in Marketing. I was the one commissioning the websites. Now I get to build the
                             websites! In other words, I have a strong appreciation of both sides of the table.</p>
-                        <a class="btn-skills" href="#">Technical Skills</a>
+                            <button href="#myModal" class="btn btn-settings btn-skills" data-backdrop="false" data-toggle="modal">Technical Skills</button>
+                            <div id="myModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                             <h4 class="modal-title">Settings</h4>  
+                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Lorem Ipsum</h3>
+                                            <p>Praesent non dictum dolor, vitae interdum erat. Nam quis consectetur mi. In consequat condimentum tortor, et lobortis est convallis ac. Quisque volutpat posuere dui, pellentesque vulputate dolor. Morbi dapibus orci eu est consectetur, sed pretium mauris laoreet. Pellentesque sodales ante non justo viverra, sit amet consectetur nisl vulputate.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            <button id="loadpage" type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
                     </div>
                 </div>
             </div>
@@ -198,7 +220,6 @@
                                 lockdown in 2020. This is the site that rekindled my love of coding.</p>
 
                         </article>
-
                     </div>
                     <!-- Item End -->
 
@@ -266,6 +287,35 @@
             </div>
         </section>
     </main>
+    <footer id="footer">
+        <div class="container">
+            <h3>Social Butterfly</h3>
+            <p>Here's where you can find me on social media:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kat-biggs-a658059/" target="_blank" rel="noopener"
+                aria-label="Find me on Linkedin (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/KatTweetsTech" target="_blank" rel="noopener"
+                aria-label="Find me on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p><span>&copy; </span><span>Copyright</span>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    | All rights reserved. | This website was made by Katherine Biggs.
+                </p>           
+            </div>
+        </div>
+    </footer>
+    <!-- Modal JS -->
+    <script>
+    let $modal = $("#myModal");
+    $modal.draggable({
+        handle: ".modal-header",
+        });
+    $modal.resizable();
+    </script>
+    <!-- Form JS -->
     <script>
         var form = document.getElementById("my-form");
         
