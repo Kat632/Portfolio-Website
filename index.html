@@ -12,6 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/butterfly.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,46 +111,45 @@
                                         </div>
                                         <div class="modal-body">
                                             <h3>Technical Skills</h3>
-                                            <table class="tg align-middle">
+                                            <table class="table table-bordered tabpe-striped table-responsive-stack tg align-middle" id="tableOne">
                                                 <thead>
                                                   <tr>
-                                                    <th class="tg-0lax">Technologies</th>
-                                                    <th class="tg-0lax">Databases</th>
-                                                    <th class="tg-0lax">Framework</th>
-                                                    <th class="tg-0lax">Version Control</th>
+                                                    <th>Technologies</th>
+                                                    <th>Databases</th>
+                                                    <th>Framework</th>
+                                                    <th>Version Control</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody>
                                                   <tr>
-                                                    <td class="tg-0lax">HTML</td>
-                                                    <td class="tg-0lax">MySQL</td>
-                                                    <td class="tg-0lax">Flask</td>
-                                                    <td class="tg-0lax">Git</td>
+                                                    <td>HTML</td>
+                                                    <td>MySQL</td>
+                                                    <td>Flask</td>
+                                                    <td>Git</td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="tg-0lax">CSS</td>
-                                                    <td class="tg-0lax">PostgreSQL<br></td>
-                                                    <td class="tg-0lax">Django</td>
-                                                    <td class="tg-0lax">GitHub</td>
+                                                    <td>CSS</td>
+                                                    <td>PostgreSQL<br></td>
+                                                    <td>Django</td>
+                                                    <td>GitHub</td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="tg-0lax">JavaScript</td>
-                                                    <td class="tg-0lax"></td>
-                                                    <td class="tg-0lax">jQuery</td>
-                                                    <td class="tg-0lax"></td>
+                                                    <td>JavaScript</td>
+                                                    <td></td>
+                                                    <td>jQuery</td>
+                                                    <td></td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="tg-0lax">Python</td>
-                                                    <td class="tg-0lax"></td>
-                                                    <td class="tg-0lax">Bootstrap</td>
-                                                    <td class="tg-0lax"></td>
+                                                    <td>Python</td>
+                                                    <td></td>
+                                                    <td>Bootstrap</td>
+                                                    <td></td>
                                                   </tr>
                                                 </tbody>
                                                 </table>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                            <button id="loadpage" type="button" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
                                     <!-- /.modal-content -->
@@ -323,24 +323,118 @@
     </main>
     <footer id="footer">
         <div class="container">
-            <h3>Social Butterfly</h3>
-            <p>Here's where you can find me on social media:</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/kat-biggs-a658059/" target="_blank" rel="noopener"
-                aria-label="Find me on Linkedin (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/KatTweetsTech" target="_blank" rel="noopener"
-                aria-label="Find me on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            <div class="row">
+                <div class="col-sm col-body">
+                    <div class="butterfly">
+                        <div class="wing">
+                            <div class="bit"></div>
+                            <div class="bit"></div>
+                        </div>
+                        <div class="wing">
+                            <div class="bit"></div>
+                            <div class="bit"></div>
+                        </div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+                <div class="col-sm">
+                    <h3>Social Butterfly</h3>
+                    <p>Here's where you can find me on social media:</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kat-biggs-a658059/" target="_blank" rel="noopener"
+                        aria-label="Find me on Linkedin (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/KatTweetsTech" target="_blank" rel="noopener"
+                        aria-label="Find me on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
             </div>
-            <div class="copyright">
-                <p><span>&copy; </span><span>Copyright</span>
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    | All rights reserved. | This website was made by Katherine Biggs.
-                </p>           
+            <div class="row">
+                <div class="copyright">
+                    <p><span>&copy; </span><span>Copyright</span>
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        | All rights reserved. | This website was made by Katherine Biggs.
+                    </p>           
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Modal Table JS -->
+    <script>
+    $(document).ready(function() {
+
+   
+        // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
+        $('.table-responsive-stack').each(function (i) {
+           var id = $(this).attr('id');
+           //alert(id);
+           $(this).find("th").each(function(i) {
+              $('#'+id + ' td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+             $(this).text() + ':</span> ');
+              $('.table-responsive-stack-thead').hide();
+              
+           });
+           
+     
+           
+        });
+     
+        
+        
+        
+        
+     $( '.table-responsive-stack' ).each(function() {
+       var thCount = $(this).find("th").length; 
+        var rowGrow = 100 / thCount + '%';
+        //console.log(rowGrow);
+        $(this).find("th, td").css('flex-basis', rowGrow);   
+     });
+        
+        
+        
+        
+     function flexTable(){
+        if ($(window).width() < 768) {
+           
+        $(".table-responsive-stack").each(function (i) {
+           $(this).find(".table-responsive-stack-thead").show();
+           $(this).find('thead').hide();
+        });
+           
+         
+        // window is less than 768px   
+        } else {
+           
+           
+        $(".table-responsive-stack").each(function (i) {
+           $(this).find(".table-responsive-stack-thead").hide();
+           $(this).find('thead').show();
+        });
+           
+           
+     
+        }
+     // flextable   
+     }      
+      
+     flexTable();
+        
+     window.onresize = function(event) {
+         flexTable();
+     };
+        
+        
+        
+        
+     
+       
+     // document ready  
+     });
+    
+    </script>
+
     <!-- Modal JS -->
     <script>
     let $modal = $("#myModal");
