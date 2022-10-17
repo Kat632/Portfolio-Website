@@ -187,3 +187,9 @@
 .twitter:hover {
     background: #dfc48d;
 }
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }

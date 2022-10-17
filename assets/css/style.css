@@ -335,6 +335,18 @@ button .btn-settings {
     color: #fff;
 }
 
+@media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
+@media (min-width: 767px) {
+    .show-on-mobile {
+      display: none;
+    }
+  }
+
 /* -- Form -- */
 
 .form-container {
