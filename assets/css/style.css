@@ -66,6 +66,10 @@ html {
     color: #696969;
 }
 
+#hero p > .hi {
+    color: #151a21;
+}
+
 #hero h1 {
     color: #151a21;
     font-size: 3rem;
@@ -91,10 +95,6 @@ html {
     background: #8C6D6A88;
     padding: 15px;
 
-}
-
-#hi {
-    color: #151a21;
 }
 
 section {
@@ -133,6 +133,7 @@ section {
 }
 
 .about .content {
+    font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     color: #151a21;
 }
@@ -145,6 +146,8 @@ section {
 .about .content ul li {
     padding-left: 28px;
     position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .about .content ul i {
