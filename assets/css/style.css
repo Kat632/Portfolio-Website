@@ -207,7 +207,7 @@ button .btn-settings {
     color: #151a21;
   }
 
-  button .btn-settings:acItive {
+  button .btn-settings:active {
     color: #8C6D6A;
     background-color: #151a21;
   }
@@ -368,28 +368,62 @@ button .btn-settings {
     color: #fff;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .hide-on-mobile {
       display: none;
     }
-  }
+  } */
 
-@media (min-width: 767px) {
+  @media (hover: hover) and (pointer: fine) {
+    /* mouse or touchpad */
+    .show-on-mobile {
+        display: none;
+}
+
+/*@media (min-width: 767px) {
     .show-on-mobile {
       display: none;
     }
-  }
+  } */
 
-.website-title {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
+  @media (hover: none) and (pointer: coarse) {
+    /* touchscreens */
+    .hide-on-mobile {
+        display: none;
+    }
 
-.card-text {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 200;
-    font-size: 14px;
-    color: #777777;
+    .card-img-top {
+        border-top: 2px solid #8C6D6A;
+        border-left: 2px solid #8C6D6A;
+        border-right: 2px solid #8C6D6A;    
+    }
+    
+    .card-body {
+        border-left: 2px solid #8C6D6A;
+        border-right: 2px solid #8C6D6A;
+    }
+    
+    .website-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: #151a21;
+    }
+    
+    .card-text {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 200;
+        font-size: 14px;
+        color: #777777;
+    }
+    
+    .card-footer {
+        background-color: #fff;
+        border: 2px solid #8C6D6A;
+    }
+    
+    .card-footer a {
+        color: #8C6D6A;
+    }
 }
 
 /* -- Form -- */
