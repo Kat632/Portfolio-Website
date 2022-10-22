@@ -186,7 +186,7 @@ section {
     border: 2px solid #8C6D6A
 }
 
-.about .content .btn-skills:hover .about .content .btn-skills:active {
+.about .content .btn-skills:hover {
     background: #8C6D6A;
     color: white;
     text-decoration: none;
@@ -221,6 +221,7 @@ button .btn-settings:active {
     padding: 20px;
     background-color: #8c6d6a;
     color: white;
+    cursor: move;
 }
 
 .modal-title {

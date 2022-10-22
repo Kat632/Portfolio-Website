@@ -139,7 +139,7 @@
                                         id="tableOne">
                                         <thead>
                                             <tr>
-                                                I <th>Languages</th>
+                                                <th>Languages</th>
                                                 <th>Databases</th>
                                                 <th>Framework</th>
                                                 <th>Version Control</th>
@@ -154,12 +154,12 @@
                                             </tr>
                                             <tr>
                                                 <td>CSS</td>
-                                                <td>PostgreSQL<br></td>
+                                                <td>Postgres<br></td>
                                                 <td>Django</td>
                                                 <td>GitHub</td>
                                             </tr>
                                             <tr>
-                                                <td>JavaScript</td>
+                                                <td>JS</td>
                                                 <td></td>
                                                 <td>jQuery</td>
                                                 <td></td>
@@ -534,6 +534,39 @@
     </div>
 </footer>
 
+<!-- Modal JS -->
+<!-- <script>
+    let $modal = $("#myModal");
+    $modal.draggable({
+        cursor: "move",
+        handle: ".modal-header",
+    });
+    $modal.resizable();
+</script> -->
+
+<script>
+//$(".modal").modal("show");
+// working draggable model from this post on Stack Overflow https://stackoverflow.com/questions/12571922/make-bootstrap-twitter-dialog-modal-draggable
+
+$(".modal-header").on("mousedown", function(mousedownEvt) {
+    var $draggable = $(this);
+    var x = mousedownEvt.pageX - $draggable.offset().left,
+        y = mousedownEvt.pageY - $draggable.offset().top;
+    $("body").on("mousemove.draggable", function(mousemoveEvt) {
+        $draggable.closest(".modal-content").offset({
+            "left": mousemoveEvt.pageX - x,
+            "top": mousemoveEvt.pageY - y
+        });
+    });
+    $("body").one("mouseup", function() {
+        $("body").off("mousemove.draggable");
+    });
+    $draggable.closest(".modal").one("bs.modal.hide", function() {
+        $("body").off("mousemove.draggable");
+    });
+});
+</script>
+
 <!-- Modal Table JS -->
 <script>
     $(document).ready(function () {
@@ -608,14 +641,6 @@
     });
 </script>
 
-<!-- Modal JS -->
-<script>
-    let $modal = $("#myModal");
-    $modal.draggable({
-        handle: ".modal-header",
-    });
-    $modal.resizable();
-</script>
 <!-- Form JS -->
 <script>
     var form = document.getElementById("my-form");
