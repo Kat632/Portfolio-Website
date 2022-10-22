@@ -105,7 +105,11 @@ html {
 .duskypink-background {
     background: #8C6D6A88;
     padding: 15px;
+}
 
+#hero .hero-left {
+    color: #151a21;
+    font-weight: 300;
 }
 
 section {
