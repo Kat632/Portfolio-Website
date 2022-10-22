@@ -306,70 +306,78 @@ button .btn-settings:active {
 
 /* -- Masonry grid -- */
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box !important;
-}
+@media (hover: hover) and (pointer: fine) {
 
-.container {
-    margin-top: 1%;
-    margin-bottom: 3%;
-}
+    /* mouse or touchpad */
+    .show-on-mobile {
+        display: none;
+    }
 
-.home-masonry-set .item {
-    display: block;
-    text-align: center;
-    overflow: hidden;
-    max-height: 16em;
-    min-height: 16em;
-    position: relative;
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-}
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box !important;
+    }
 
-.home-masonry-set .item article {
-    display: block;
-    opacity: 0;
-    height: 100%;
-    padding: 60px 50px;
-    position: relative;
-    transition: all .5s ease;
-}
+    .container {
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
 
-.home-masonry-set>.item img {
-    display: block;
-    object-fit: cover;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    min-height: 16em;
-    width: 100%;
-    z-index: 0;
-}
+    .home-masonry-set .item {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        max-height: 16em;
+        min-height: 16em;
+        position: relative;
+        float: left;
+        padding-right: 0;
+        padding-left: 0;
+    }
 
-.home-masonry-set>div:hover,
-.home-masonry-set>div:active,
-.home-masonry-set>div:focus {
-    cursor: pointer;
-}
+    .home-masonry-set .item article {
+        display: block;
+        opacity: 0;
+        height: 100%;
+        padding: 60px 50px;
+        position: relative;
+        transition: all .5s ease;
+    }
 
-.home-masonry-set>div:hover article,
-.home-masonry-set>div:active article,
-.home-masonry-set>div:focus article {
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 1;
-}
+    .home-masonry-set>.item img {
+        display: block;
+        object-fit: cover;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        min-height: 16em;
+        width: 100%;
+        z-index: 0;
+    }
 
-.home-masonry-set>div h3 {
-    margin-top: 0px;
-    color: #fff;
-}
+    .home-masonry-set>div:hover,
+    .home-masonry-set>div:active,
+    .home-masonry-set>div:focus {
+        cursor: pointer;
+    }
 
-.home-masonry-set>div p {
-    text-align: justify;
-    color: #fff;
+    .home-masonry-set>div:hover article,
+    .home-masonry-set>div:active article,
+    .home-masonry-set>div:focus article {
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 1;
+    }
+
+    .home-masonry-set>div h3 {
+        margin-top: 0px;
+        color: #fff;
+    }
+
+    .home-masonry-set>div p {
+        text-align: justify;
+        color: #fff;
+    }
 }
 
 /*@media (max-width: 767px) {
@@ -431,14 +439,6 @@ button .btn-settings:active {
 
     .card-footer a {
         color: #8C6D6A;
-    }
-}
-
-@media (hover: hover) and (pointer: fine) {
-
-    /* mouse or touchpad */
-    .show-on-mobile {
-        display: none;
     }
 }
 
