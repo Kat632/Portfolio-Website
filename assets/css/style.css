@@ -93,6 +93,8 @@ html {
 
 #hero h2 {
     color: #151a21;
+    font-weight: 600;
+    font-size: 2.5rem;
 }
 
 .gold-background {
