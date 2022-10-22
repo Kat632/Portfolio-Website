@@ -378,14 +378,6 @@ button .btn-settings:active {
     }
   } */
 
-@media (hover: hover) and (pointer: fine) {
-
-    /* mouse or touchpad */
-    .show-on-mobile {
-        display: none;
-    }
-}
-
 /*@media (min-width: 767px) {
     .show-on-mobile {
       display: none;
@@ -439,6 +431,14 @@ button .btn-settings:active {
 
     .card-footer a {
         color: #8C6D6A;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    /* mouse or touchpad */
+    .show-on-mobile {
+        display: none;
     }
 }
 
