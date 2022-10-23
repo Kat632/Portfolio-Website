@@ -184,6 +184,7 @@ References used:
 - [Draggable Modal](https://codepen.io/adamcjoiner/pen/PNbbbv "Code for draggable modal adapted from here")
 - [Bootstrap 4 Masonry Grid Layout](https://codepen.io/vinguerra/pen/KmoJRm "Code for Bootstrap 4 masonry grid layout")
 - [Bootstrap Responsive Card Layout](https://stackoverflow.com/questions/34140793/bootstrap-4-responsive-cards-in-card-columns "Link to Bootstrap 4 responsive cards")
+- [Bootstrap 4 Responsive Table Layout](https://codepen.io/JacobLett/pen/mBQoOj "Link to Bootstrap 4 Reposnive Table Layout")
 - [CSS Butterfly](https://codepen.io/dazulu/pen/aOzqvz "Link to code for CSS Butterfly")
 
 [Back to top ⇧](#)
