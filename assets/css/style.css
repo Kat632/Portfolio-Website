@@ -198,7 +198,7 @@ section {
 
 /* -- Skills Modal -- */
 
-button .btn-settings {
+.button .btn-settings {
     margin: 25px;
     padding: 20px 30px;
     font-size: 1.2em;
@@ -206,7 +206,7 @@ button .btn-settings {
     color: #151a21;
 }
 
-button .btn-settings:active {
+.button .btn-settings:active {
     color: #8C6D6A;
     background-color: #151a21;
 }
@@ -374,6 +374,10 @@ button .btn-settings:active {
         opacity: 1;
     }
 
+    .home-masonry-set>div a {
+        text-decoration: none;
+    }
+
     .home-masonry-set>div h3 {
         margin-top: 0px;
         color: #fff;
@@ -381,7 +385,7 @@ button .btn-settings:active {
 
     .home-masonry-set>div p {
         text-align: justify;
-        color: #fff;
+        color: #fff;    
     }
 }
 

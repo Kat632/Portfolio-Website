@@ -21,7 +21,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -72,6 +72,8 @@
                     <a class="nav-link scrollto" href="#contact">Contact</a>
                 </li>
             </ul>
+        </div>
+    </nav>
 </header>
 <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
@@ -123,8 +125,8 @@
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>I used to work in Marketing. I was the one commissioning the websites. Now I get to build the
                         websites! In other words, I have a strong appreciation of both sides of the table.</p>
-                    <button href="#myModal" class="btn btn-settings btn-skills" data-backdrop="false"
-                        data-toggle="modal">Technical Skills</button>
+                    <a href="#myModal" class="button btn btn-settings btn-skills" data-backdrop="false"
+                        data-toggle="modal">Technical Skills</a>
                     <div id="myModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -479,16 +481,16 @@
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input id="name" class="form-control" type="text" name="name" placeholder="Your Name"
-                                    required="" aria-required="true" />
+                                    required="" aria-required="true">
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
                                 <input id="email" class="form-control" type="email" name="email"
-                                    placeholder="Your Email" required="" aria-required="true" />
+                                    placeholder="Your Email" required="" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group mt-3">
                             <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject"
-                                required="" aria-required="true" />
+                                required="" aria-required="true">
                         </div>
                         <div class="form-group mt-3">
                             <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message"
