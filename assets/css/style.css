@@ -14,7 +14,7 @@ html {
     left: 0;
     right: 0;
     top: 0;
-    align-items: right;
+    align-items: end;
 }
 
 #navbar ul {
@@ -304,7 +304,7 @@ section {
 
     /*  IE9 FIX   */
     .table-responsive-stack td {
-        float: left\9;
+        float: left;
         width: 100%;
     }
 }
