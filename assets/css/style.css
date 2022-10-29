@@ -252,63 +252,6 @@ section {
     font-size: 1.1em;
 }
 
-/* -- Modal Table -- */
-
-.table-responsive-stack tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-.table-responsive-stack td,
-.table-responsive-stack th {
-    display: block;
-    /*      
-   flex-grow | flex-shrink | flex-basis   */
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-.table-responsive-stack td,
-.table-responsive-stack th {
-    display: block;
-    /*      
-   flex-grow | flex-shrink | flex-basis   */
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-.table-responsive-stack thead {
-    font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #151a21;
-    background: #DDC399;
-}
-
-@media screen and (max-width: 768px) {
-    .table-responsive-stack tr {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        border-bottom: 3px solid #ccc;
-        display: block;
-
-    }
-
-    /*  IE9 FIX   */
-    .table-responsive-stack td {
-        float: left;
-        width: 100%;
-    }
-}
-
 /* -- Masonry grid -- */
 
 @media (hover: hover) and (pointer: fine) {
@@ -327,6 +270,44 @@ section {
     .container {
         margin-top: 1%;
         margin-bottom: 3%;
+    }
+
+    /* -- Modal Table -- */
+
+    .table-responsive-stack tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .table-responsive-stack td,
+    .table-responsive-stack th {
+        display: block;
+        /*      
+       flex-grow | flex-shrink | flex-basis   */
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    .table-responsive-stack td,
+    .table-responsive-stack th {
+        display: block;
+        /* flex-grow | flex-shrink | flex-basis   */
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    .table-responsive-stack thead {
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #151a21;
+        background: #DDC399;
     }
 
     .home-masonry-set .item {
@@ -385,7 +366,7 @@ section {
 
     .home-masonry-set>div p {
         text-align: justify;
-        color: #fff;    
+        color: #fff;
     }
 }
 
@@ -417,6 +398,20 @@ section {
         text-align: right;
     }
 
+    .bs-columns {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .bs-columns h4 {
+        color: #8c6d6a;
+        text-transform: uppercase;
+    }
+
+    .bs-columns ul li {
+        padding-left: 0 !important;
+    }
+
     .card-img-top {
         border-top: 2px solid #8C6D6A;
         border-left: 2px solid #8C6D6A;
@@ -433,6 +428,25 @@ section {
         font-weight: 300;
         color: #151a21;
     }
+
+    /* @media screen and (max-width: 768px) {
+    .table-responsive-stack tr {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-bottom: 3px solid #ccc;
+        display: block;
+
+    }
+    */
+
+    /*  IE9 FIX   */
+    /*.table-responsive-stack td {
+        float: left;
+        width: 100%;
+    }
+} */
 
     .card-text {
         font-family: 'Roboto Mono', monospace;

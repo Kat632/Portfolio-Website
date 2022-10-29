@@ -137,8 +137,7 @@
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>I used to work in Marketing. I was the one commissioning the websites. Now I get to build the
                         websites! In other words, I have a strong appreciation of both sides of the table.</p>
-                    
-                    
+
                     <a href="#myModal" class="button btn btn-settings btn-skills" data-backdrop="false"
                         data-toggle="modal">Technical Skills</a>
                     <div id="myModal" class="modal fade">
@@ -151,13 +150,13 @@
                                 <div class="modal-body">
                                     <h3>Technical Skills</h3>
                                     <table
-                                        class="table table-bordered table-striped table-responsive-stack tg align-middle"
+                                        class="table table-bordered table-striped table-responsive-stack tg align-middle hide-on-mobile"
                                         id="tableOne">
                                         <thead>
                                             <tr>
                                                 <th>Languages</th>
                                                 <th>Databases</th>
-                                                <th>Framework</th>
+                                                <th>Frameworks</th>
                                                 <th>Version Control</th>
                                             </tr>
                                         </thead>
@@ -194,6 +193,52 @@
                                             </tr>
                                         </tbody>
                                     </table>
+
+                                    <!-- https://getbootstrap.com/docs/5.2/layout/columns/ -->
+
+                                    <div class="container text-center show-on-mobile pt-2">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 bs-columns">
+                                                <h4>Languages</h4>
+
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>JS</li>
+                                                    <li>Python</li>
+                                                    <li>PHP</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-6 col-sm-3 bs-columns">
+                                                <h4>Databases</h4>
+                                                <ul>
+                                                    <li>MySQL</li>
+                                                    <li>Postgres</li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Force next columns to break to new line -->
+                                            <div class="w-100"></div>
+
+                                            <div class="col-6 col-sm-3 bs-columns">
+                                                <h4>Frameworks</h4>
+                                                <ul>
+                                                    <li>Flask</li>
+                                                    <li>Django</li>
+                                                    <li>jQuery</li>
+                                                    <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 col-sm-3 bs-columns">
+                                                <h4>Version Control</h4>
+                                                <ul>
+                                                    <li>Git</li>
+                                                    <li>GitHub</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
