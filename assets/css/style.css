@@ -320,12 +320,12 @@ section {
     }
 
     .masonry-item-bottom-left {
-        border-right: 3px solid #8c6d6a;        
+        border-right: 3px solid #8c6d6a;
     }
 
     .masonry-item-bottom-right {
         border-left: 3px solid #8c6d6a;
-        border-top: 3px solid #8c6d6a;        
+        border-top: 3px solid #8c6d6a;
     }
 
     .home-masonry-set .item {
@@ -399,79 +399,79 @@ section {
         float: right;
         width: 45%;
     }
-    
-    .links-live a, 
+
+    .links-live a,
     .links-gh a {
         text-decoration: none;
         color: #fff;
     }
 
-    .links-live a:hover, 
+    .links-live a:hover,
     .links-gh a:hover {
         color: #DDC399;
         text-decoration: underline;
     }
 
-/*@media (max-width: 767px) {
+    /*@media (max-width: 767px) {
     .hide-on-mobile {
       display: none;
     }
   } */
 
-/*@media (min-width: 767px) {
+    /*@media (min-width: 767px) {
     .show-on-mobile {
       display: none;
     }
   } */
 
-@media (hover: none) and (pointer: coarse) {
+    @media (hover: none) and (pointer: coarse) {
 
-    /* touchscreens */
-    .hide-on-mobile {
-        display: none;
-    }
+        /* touchscreens */
+        .hide-on-mobile {
+            display: none;
+        }
 
-    #hero p {
-        text-align: right;
-    }
+        #hero p {
+            text-align: right;
+        }
 
-    #hero h1,
-    #hero h2 {
-        text-align: right;
-    }
+        #hero h1,
+        #hero h2 {
+            text-align: right;
+        }
 
-    .bs-columns {
-        max-width: 75%;
-        margin: 0 auto;
-    }
+        .bs-columns {
+            max-width: 75%;
+            margin: 0 auto;
+        }
 
-    .bs-columns h4 {
-        color: #8c6d6a;
-        text-transform: uppercase;
-    }
+        .bs-columns h4 {
+            color: #8c6d6a;
+            text-transform: uppercase;
+        }
 
-    .bs-columns ul li {
-        padding-left: 0 !important;
-    }
+        .bs-columns ul li {
+            padding-left: 0 !important;
+        }
 
-    .card-img-top {
-        border-top: 2px solid #8C6D6A;
-        border-left: 2px solid #8C6D6A;
-        border-right: 2px solid #8C6D6A;
-    }
+        .card-img-top {
+            border-top: 2px solid #8C6D6A;
+            border-left: 2px solid #8C6D6A;
+            border-right: 2px solid #8C6D6A;
+        }
 
-    .card-body {
-        border-left: 2px solid #8C6D6A;
-        border-right: 2px solid #8C6D6A;
-    }
+        .card-body {
+            border-left: 2px solid #8C6D6A;
+            border-right: 2px solid #8C6D6A;
+        }
 
-    .website-title {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        color: #151a21;
-    }
+        .website-title {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #151a21;
+        }
 
-    /* @media screen and (max-width: 768px) {
+        /* @media screen and (max-width: 768px) {
     .table-responsive-stack tr {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -483,152 +483,153 @@ section {
     }
     */
 
-    /*  IE9 FIX   */
-    /*.table-responsive-stack td {
+        /*  IE9 FIX   */
+        /*.table-responsive-stack td {
         float: left;
         width: 100%;
     }
 } */
 
-    .card-text {
-        font-family: 'Roboto Mono', monospace;
-        font-weight: 200;
+        .card-text {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 200;
+            font-size: 14px;
+            color: #777777;
+        }
+
+        .card-footer {
+            background-color: #fff;
+            border: 2px solid #8C6D6A;
+        }
+
+        .card-footer a {
+            color: #8C6D6A;
+        }
+    }
+
+    /* -- Form -- */
+
+    .form-container {
+        background: #DDC399;
+    }
+
+    .contact .info {
+        width: 100%;
+    }
+
+    .contact .info i {
+        font-size: 32px;
+        color: #151a21;
+        float: left;
+        line-height: 1;
+    }
+
+    .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #282828;
+    }
+
+    .contact .info p {
+        padding: 0 0 0 60px;
+        margin-bottom: 0;
         font-size: 14px;
-        color: #777777;
+        color: #5b5b5b;
     }
 
-    .card-footer {
-        background-color: #fff;
-        border: 2px solid #8C6D6A;
+    .contact .info .email,
+    .contact .info .phone {
+        margin-top: 40px;
     }
 
-    .card-footer a {
-        color: #8C6D6A;
+    .contact .form-group {
+        padding-bottom: 8px;
     }
-}
 
-/* -- Form -- */
+    .contact input {
+        height: 44px;
+        font-size: 14px;
+        border-radius: 4px;
+        box-shadow: none;
+    }
 
-.form-container {
-    background: #DDC399;
-}
+    .contact textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        box-shadow: none;
+    }
 
-.contact .info {
-    width: 100%;
-}
+    .contact button[type="submit"] {
+        font-family: 'Roboto Mono', monospace;
+        background: #151a21;
+        color: #fff;
+        border: 0;
+        padding: 10px 30px;
+        transition: 0.4s;
+        border-radius: 50px;
+    }
 
-.contact .info i {
-    font-size: 32px;
-    color: #151a21;
-    float: left;
-    line-height: 1;
-}
+    .contact button[type="submit"]:hover {
+        font-family: 'Roboto Mono', monospace;
+        background: #fff;
+        color: #151a21;
+        text-decoration: none;
+    }
 
-.contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #282828;
-}
+    /* -- Footer -- */
 
-.contact .info p {
-    padding: 0 0 0 60px;
-    margin-bottom: 0;
-    font-size: 14px;
-    color: #5b5b5b;
-}
+    #footer {
+        background: #151a21;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding: 30px 0;
+    }
 
-.contact .info .email,
-.contact .info .phone {
-    margin-top: 40px;
-}
+    #footer h3 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        position: relative;
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
 
-.contact .form-group {
-    padding-bottom: 8px;
-}
+    #footer p {
+        font-style: italic;
+        font-family: 'Roboto Mono', monospace;
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
 
-.contact input {
-    height: 44px;
-    font-size: 14px;
-    border-radius: 4px;
-    box-shadow: none;
-}
+    #footer .social-links {
+        margin: 0 0 40px 0;
+    }
 
-.contact textarea {
-    padding: 10px 12px;
-    font-size: 14px;
-    border-radius: 4px;
-    box-shadow: none;
-}
+    #footer .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #DDC399;
+        color: #151a21;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
 
-.contact button[type="submit"] {
-    font-family: 'Roboto Mono', monospace;
-    background: #151a21;
-    color: #fff;
-    border: 0;
-    padding: 10px 30px;
-    transition: 0.4s;
-    border-radius: 50px;
-}
+    #footer .social-links a:hover {
+        background: #8C6D6A;
+    }
 
-.contact button[type="submit"]:hover {
-    font-family: 'Roboto Mono', monospace;
-    background: #fff;
-    color: #151a21;
-    text-decoration: none;
-}
-
-/* -- Footer -- */
-
-#footer {
-    background: #151a21;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 30px 0;
-}
-
-#footer h3 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    padding: 0;
-    margin: 0 0 15px 0;
-}
-
-#footer p {
-    font-style: italic;
-    font-family: 'Roboto Mono', monospace;
-    padding: 0;
-    margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-    margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #DDC399;
-    color: #151a21;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-    background: #8C6D6A;
-}
-
-#footer .copyright {
-    margin: 0 auto;
-    font-family: 'Roboto Mono', monospace;
+    #footer .copyright {
+        margin: 0 auto;
+        font-family: 'Roboto Mono', monospace;
+    }
 }
