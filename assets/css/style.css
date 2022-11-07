@@ -409,7 +409,108 @@ section {
     .links-live a:hover,
     .links-gh a:hover {
         color: #DDC399;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: relative;
+        transition: 0.5s color ease;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .links-live a.before:before,
+    a.after:after,
+    .links-gh a.before:before,
+    a.after:after {
+        content: "";
+        transition: 0.5s all ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+
+    .links-live a.before:before.about,
+    .links-gh a.before:before {
+        top: -0.25em;
+    }
+
+    .links-live a.after:after,
+    .links-gh a.afer:after {
+        bottom: -0.25em;
+    }
+
+    .links-live a.before:before,
+    a.after:after,
+    .links-gh a.before:before,
+    a.after:after {
+        height: 5px;
+        height: 0.35rem;
+        width: 0;
+        background: #ddc399;
+    }
+
+    .links-live a.before:hover:before,
+    a.after:hover:after,
+    .links-gh a.before:hover:before,
+    a.after:hover:after {
+        width: 100%;
+    }
+
+    .wrapper {
+        margin: 1em 0;
+    }
+
+    .square {
+        box-sizing: border-box;
+        margin-left: -0.4em;
+        position: relative;
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    .square a {
+        position: static;
+        font-size: 100%;
+        padding: 0.2em 0.4em;
+    }
+
+    .square:before {
+        left: 0;
+        bottom: -0.2em;
+    }
+
+    .square:before,
+    .square:after {
+        content: "";
+        box-sizing: border-box;
+        transition: 0.25s all ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        width: 5px;
+        width: 0.35rem;
+        height: 0;
+        background: #DDC399;
+    }
+
+    .square a:before {
+        left: 0;
+        transition: 0.25s all ease;
+    }
+
+    .square a:after {
+        right: 0;
+        transition: 0.25s all ease;
+    }
+
+    .square:hover:before,
+    .square:hover:after {
+        height: calc(100% + 0.4em);
+    }
+
+    .square:hover a:before,
+    .square:hover a:after {
+        width: 100%;
     }
 }
 
