@@ -153,6 +153,11 @@ section {
     color: #151a21;
 }
 
+.ci-link, .ci-link:active,
+.ci-link:hover, .ci-link:visited {
+    color: #8C6D6A;
+}
+
 .about .content ul {
     list-style: none;
     padding: 0;
@@ -382,11 +387,13 @@ section {
         padding-top: 25px;
         color: #fff;
         font-size: 1.5rem;
+        font-weight: 300;
     }
 
     .home-masonry-set>div p {
         /*text-align: justify;*/
         color: #fff;
+        font-weight: 300;
     }
 
     .links-live {
