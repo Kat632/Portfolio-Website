@@ -8,6 +8,34 @@ Hello!  Welcome to my Portfolio website.
 
 ***
 
+## Table of Contents
+
+- [Katherine Biggs - Portfolio Website](#katherine-biggs---portfolio-website)
+  * [Introduction](#introduction)
+  * [UX](#ux)
+    + [User Stories](#user-stories)
+    + [Design](#design)
+      - [Colour Scheme](#colour-scheme)
+      - [Typography](#typography)
+      - [Imagery](#imagery)
+  * [Features](#features)
+    + [Design Features](#design-features)
+  * [Issues and Bugs](#issues-and-bugs)
+  * [Technologies Used](#technologies-used)
+    + [Languages Used](#languages-used)
+    + [Frameworks, Libraries & Programs Used](#frameworks--libraries---programs-used)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+    + [Forking the Repository](#forking-the-repository)
+    + [Creating a Clone](#creating-a-clone)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Code](#code)
+  * [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Introduction
 
 This is my portfolio website.
@@ -34,7 +62,7 @@ To ensure the UX is simple and user-friendly, by providing easy navigation throu
 
 *	As a website visitor, I would like to see examples of previous projects undertaken by the organisation.
 
-**2. Scope**
+**Developer Goals**
 
 *	To create a fluid and responsive layout for ease of use on common devices.
 
@@ -43,22 +71,24 @@ To ensure the UX is simple and user-friendly, by providing easy navigation throu
 ### Design
 
 #### Colour Scheme
-I chose to use a clean white background, using green and black for the typography and flashes of orange, yellow and red which are typical salad colours.  I wanted the website to look fresh and convey a healthy feeling.
+This is probably my favourite colour scheme ever.  I love the way the colours work together against the white background.  I wanted the website to look professional and match the hero image.
 
-The white background allows the colours in the recipe images to look bright, appetising and attractive.
+I used [coolors](https://coolors.co/) to generate the original palette based on the hero image.
+
+![Katherine Biggs Portfolio website - Colour Palette](assets/readme_images/coolors-palette.png 'Shows coolors colour palette')
 
 #### Typography
 
 Lato and Roboto Monospace
 
-The font chosen for the logo was Dancing Script as it is elegant and classic.  The font has also been used throughout the website for sub-headings, to add some differentiation from the main font of the site. All instances of Dancing Script have also been styled green to make them stand out against the white background of the site.
+The main body of the website, including all the headings uses the Lato font.  Lato is a sans-serif typeface, created in 2010 by Polsih font designer Lukasz Dziedzic.  "Lato" means "summer in Polish.  I like its rounded edges and I feel it conveys the same warmth as the colour palette and the hero image.
 
-The main font of the website is Poppins, which has been used for large headings, as well as all other text.  Poppins is a popular, versatile font and it ensures that the most important information on the site is readable.
+The paragraphed texts on the website use the Roboto Mono font which is a monospaced version of the Roboto font family.  It was designed by Christian Robertson and I chose it because it is very similar to the font used in GitPod.  It looks like a programming font.
 
 Both fonts were chosen from [Google Fonts](https://fonts.google.com/ 'Google Fonts website')
 
 #### Imagery
-The hero image of me was taken by [Vanda Szabo](https://vsphotography.co.uk/ 'Vanda Szabo Photography') and I am very grateful to her for gifting it to me.
+The hero image of me was taken by [Vanda Szabo](https://vsphotography.co.uk/ 'Vanda Szabo Photography').  I am very grateful to her for gifting it to me.
 
 
 [Back to top ⇧](#)
@@ -66,10 +96,11 @@ The hero image of me was taken by [Vanda Szabo](https://vsphotography.co.uk/ 'Va
 ## Features
 
 ### Design Features
-This is a single-page website featureing a consistent responsive navigational system:
+This is a single-page website featuring a consistent responsive navigational system:
 
-- The **Technical Skills Modal** TYPE SOMETHING!
-- The **Footer** contains my contact information.  If the footer is viewed on a larger screen, an animated butterfly is visible.  Details of the code for this butterfly can be obtained from this section [*****?*****] within this readme file.
+- The **Technical Skills Modal** contains my current skillset.  The modal is draggable when viewed on a desktop computer and I have tabulated my skills because I thought it looked neat.  The table is responsive, but not in a way that lends itself to being viewed on a small screen.  Therefore for mobile screens, I have hidden the table and my skill are displayed in simple bootstrap columns.  Details of the code for the draggable modal can be obtained from this section [Code](#code) within this readme file.  
+
+- The **Footer** contains my contact information.  If the footer is viewed on a larger screen, an animated butterfly is visible.  Details of the code for this butterfly can be obtained from this section [Code](#code) within this readme file.
 
 [Back to top ⇧](#)
 
@@ -101,6 +132,8 @@ I discoverd that CSS queries can be set for only touchscreen or not devices from
      - GitHub was used to store the project after pushing
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used to generate the mockup imagery.
+- [Formspree](https://formspree.io/ "Link to the Formspree website")
+     - Uses the Formspree API.  Uses an AJAX library to send the data as JSON.
 
 [Back to top ⇧](#)
 
