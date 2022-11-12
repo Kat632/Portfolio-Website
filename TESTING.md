@@ -5,7 +5,7 @@
 
 ## **Functionality Testing**
 
-I used Mozilla Web Developer Tools and Chrome Developer Tools throughout the project for testing and solving problems with responsiveness and style issues.
+I used Mozilla Web Developer Tools and Chrome Developer Tools throughout the project for testing and solving problems with responsiveness and style.
 
 ## **Compatibility Testing**
 
@@ -15,7 +15,7 @@ The site has been tested across multiple non-virtual devices, including iPhone 8
 
 ## **Performance testing**
 
-All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with no major concerns, except for the empty values in the aria-required labels on the form fields.  These have been changed to aria-required="true".
+All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with no major concerns.
 
 ## **Accessibility Testing**
 
