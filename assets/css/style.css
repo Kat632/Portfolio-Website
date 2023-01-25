@@ -35,7 +35,7 @@ html {
     justify-content: space-between;
     padding: 25px 3px;
     font-size: 16px;
-    color: #8C6D6A;
+    color: #151a21;
     white-space: nowrap;
     font-weight: 800;
     transition: 0.3s;
@@ -69,7 +69,7 @@ html {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     font-weight: 600;
-    color: #696969;
+    color: #373735;
 }
 
 /*@media (max-width: 767px) {
@@ -446,7 +446,7 @@ section {
           font-size:16px;
       }
       a:hover{
-          color:#ddc399;
+          color:#8C6D6A;
       }
       a.after:after{
         content: "";
